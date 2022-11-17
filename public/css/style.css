@@ -5,18 +5,19 @@
   --quatrinary: #6c6b67;
   --light: #e3e4e3;
   --dark: #182c23;
-  --error: rgb(228, 46, 1);
+ 
   --border-radius: 0.3rem;
 }
 
-body {
+wrapper {
+  max-width: 1200px;
   font-family: Arial;
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  background-color: var(--quatrinary);
+  background-color: var(--light);
 }
 
 a {
@@ -32,7 +33,7 @@ header {
   padding: 40px;
   text-align: center;
   background: var(--primary);
-  color: var(--light);
+  color: var(--secondary);
 }
 
 main {
@@ -45,14 +46,15 @@ main {
 
 nav {
   display: flex;
-  background-color: var(--secondary);
+ justify-content: flex-end;
+
 }
 
 nav a {
   color: var(--light);
   padding: 14px 20px;
   text-decoration: none;
-  text-align: center;
+ 
 }
 
 nav a:hover {
@@ -60,12 +62,30 @@ nav a:hover {
   background-color: var(--dark);
 }
 
+.post{
+  margin: 20px 0;
+  border: 1px var(--secondary);
+  text-align: right;
+}
 
+.post-title{
+  background-color:var(--tertiary);
+  padding: 15px;
+  margin-top: 0;
+  text-align: left;
+}
 
-/* LAYOUT */
-.container {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: flex-start;
-  align-items: center;
+.post-title a:link{
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.post-title a:hover{
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.post-content{
+  padding: 10px !important;
+  text-align: left !important;
 }

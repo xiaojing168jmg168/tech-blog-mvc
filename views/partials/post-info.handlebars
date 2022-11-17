@@ -1,8 +1,10 @@
 
-  <div class="list-group-item list-group-item-action active" aria-current="true">
-    <div class="d-flex w-100 justify-content-between">
-      <h4 class="mb-1" href="/post/{{id}}">{{title}}</h4>
-      <small>Posted by {{user.username}} on {{format_date added_date}}</small>
+<div class="container row">
+    <div class="card-header dashboard-post">
+       <h4 class="card-title post-title"><a class="link" href="/post/{{id}}">{{title}}</a></h4>
+        <div class="card-body post-body">
+        <p class="card-body post-content">{{content}}</p>
+        <p class="card-text post-author">Posted by <span class="post-username">{{user.username}}</span> on {{format_date added_date}}</p>
+        </div>
     </div>
-    <p class="mb-1">{{content}}</p>
-  </div>
+</div>
