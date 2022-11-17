@@ -10,20 +10,21 @@ router.get('/', (req, res) => {
                 'id',
                 'title',
                 'content',
+                'added_date'
                ],
-            // include: [{
-            //         model: Comment,
-            //         attributes: ['id', 'comment_text', 'post_id', 'user_id'],
-            //         include: {
-            //             model: User,
-            //             attributes: ['username']
-            //         }
-            //     },
-            //     {
-            //         model: User,
-            //         attributes: ['username']
-            //     }
-            // ]
+            include: [{
+                    model: Comment,
+                    attributes: ['id', 'comment_text', 'post_id', 'user_id','added_date'],
+                    include: {
+                        model: User,
+                        attributes: ['username']
+                    }
+                },
+                {
+                    model: User,
+                    attributes: ['username']
+                }
+            ]
         })
         .then(dbPostData => {
             const posts = dbPostData.map(post => post.get({ plain: true }));

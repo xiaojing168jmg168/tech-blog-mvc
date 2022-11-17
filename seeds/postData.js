@@ -2,13 +2,13 @@ const { Post } = require('../models');
 
 const postData = [{
         title: 'Google product manager interview',
-        content: 'Today, we’re going to cover everything you need to know to prepare for product manager interviews at Google.',
+        content: 'Today, we are going to cover everything you need to know to prepare for product manager interviews at Google.',
         user_id: 1
 
     },
     {
         title: 'Facebook / Meta software',
-        content: 'Array and string questions are BY FAR the most common coding questions asked by Facebook, so you’ll want to make sure that you’re ready for them.',
+        content: 'Array and string questions are BY FAR the most common coding questions asked by Facebook, so you will want to make sure that you are ready for them.',
         user_id: 2
     },
     {
