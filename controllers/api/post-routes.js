@@ -5,7 +5,7 @@ const { Post, User, Comment } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 //Get all post
-router.ger("/", (req, res) => {
+router.get("/", (req, res) => {
   Post.findAll({
     attribute: ["id", "title", "content", "added_date"],
     order: [["added_date", "DESC"]],
