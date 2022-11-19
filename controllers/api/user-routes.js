@@ -59,6 +59,7 @@ router.post("/", (req, res) => {
     username: req.body.username,
     password: req.body.password,
   }).then((dbUserData) => {
+console.log(dbUserData);
     req.session
       .save(() => {
         req.session.user_id = dbUserData.id;
@@ -67,11 +68,12 @@ router.post("/", (req, res) => {
 
         res.status(200).json(dbUserData);
       })
+})
       .catch((err) => {
         console.log(err);
         res.status(500).json(err);
       });
-  });
+
 });
 
 // Login

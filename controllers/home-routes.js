@@ -28,6 +28,7 @@ router.get('/', (req, res) => {
         })
         .then(dbPostData => {
             const posts = dbPostData.map(post => post.get({ plain: true }));
+console.log(req.session.loggedIn);
             res.render('homepage',{ posts,  loggedIn: req.session.loggedIn });
         })
         .catch(err => {
@@ -55,12 +56,12 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
-router.get('/dashboard', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
+// router.get('/dashboard', (req, res) => {
+//   if (req.session.loggedIn) {
+//     res.redirect('/');
+//     return;
+//   }
 
-  res.render('dashboard');
-});
+//   res.render('dashboard');
+// });
 module.exports = router;
