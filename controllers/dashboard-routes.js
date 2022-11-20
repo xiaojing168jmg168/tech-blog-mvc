@@ -42,7 +42,7 @@ router.get('/', withAuth, (req, res) => {
 
 //Update post
 router.get('/edit/:id',withAuth, (req,res)=>{
-Post.findByPk(req.params.id)
+ Post.findByPk(req.params.id)
   .then(dbPostData =>{
      if(!dbPostData){
         res.status(404).json({ message: 'No post found with this id' });
@@ -51,12 +51,12 @@ Post.findByPk(req.params.id)
        const post = dbPostData.get({plain:true});
        res.render("edit-post",{ post, loggedIn: true 
      })
-    
+    })
      .catch(err => {
             console.log(err);
             res.status(500).json(err);
         });
-})
+
 })
 
 router.get('')
