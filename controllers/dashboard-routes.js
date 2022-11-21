@@ -38,7 +38,10 @@ router.get('/', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
-
+// AFTER CLICK ON NEW POST BUTTON
+router.get('/new', (req, res) => {
+    res.render('new-post');
+});
 
 //Update post
 router.get('/edit/:id',withAuth, (req,res)=>{
@@ -46,7 +49,7 @@ router.get('/edit/:id',withAuth, (req,res)=>{
   .then(dbPostData =>{
      if(!dbPostData){
         res.status(404).json({ message: 'No post found with this id' });
-                return;
+        return;
        }
        const post = dbPostData.get({plain:true});
        res.render("edit-post",{ post, loggedIn: true 
@@ -59,10 +62,8 @@ router.get('/edit/:id',withAuth, (req,res)=>{
 
 })
 
-router.get('')
 
-router.get('/new', (req, res) => {
-    res.render('new-post');
-});
+
+
 
 module.exports = router;
