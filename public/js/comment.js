@@ -1,16 +1,17 @@
 
-const post_id = window.location.toString().split('/')[
-        window.location.toString().split('/').length - 1
-    ];
 
-console.log("testing");
-console.log(post_id);
+// const user_id = req.session.user_id;
+// console.log("testing");
+// console.log(user_id);
 
 const commentFormHandler = async function(event){
 
       event.preventDefault();
       const comment_text = document.querySelector('input[name="comment-body"]').value.trim();
-    
+
+      const post_id = window.location.toString().split('/')[
+        window.location.toString().split('/').length - 1
+    ];
 
       if(comment_text){
         const response = await fetch('api/comment',{
@@ -18,7 +19,7 @@ const commentFormHandler = async function(event){
                 body:JSON.stringify({
                    post_id,
                    comment_text,
-                
+            
                     }),
                 headers:{
                  'Content-Type': 'application/json'
