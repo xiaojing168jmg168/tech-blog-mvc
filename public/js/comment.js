@@ -1,9 +1,5 @@
 
 
-// const user_id = req.session.user_id;
-// console.log("testing");
-// console.log(user_id);
-
 const commentFormHandler = async function(event){
 
       event.preventDefault();
@@ -19,13 +15,13 @@ const commentFormHandler = async function(event){
                 body:JSON.stringify({
                    post_id,
                    comment_text,
-            
                     }),
                 headers:{
                  'Content-Type': 'application/json'
                  }
                   });
             if(response.ok){
+
                 document.location.reload();
              }else{
            alert(response.statusText);

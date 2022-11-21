@@ -71,8 +71,8 @@ main {
 }
 
 .post {
-  border: 1px lightslategray solid;
-  border-radius: var(--border-radius);
+  border: 1px var(--tertiary) solid;
+  border-radius: 10px;
   margin: 0 0 15px 0;
   text-align: right;
   position: relative;
@@ -114,18 +114,50 @@ main {
   text-align: left !important;
   padding: 1%;
 }
+
 .post-username {
   font-weight: bold;
 }
 
+.post-author{
+text-align: right;
+}
 
+.single-post-container{
+  margin-top: 20px;
+}
+
+.comment-form{
+  margin-top: 10px;
+  padding: 10px;
+ 
+}
+
+.comment-button{
+  margin-top: 20px;
+}
+.comments{
+border-bottom: 0.5px solid var(--tertiary);
+margin-bottom: 5px;
+}
+
+.comment-text{
+  padding: 10px;
+  text-align: left;
+}
+
+.comment-author{
+  padding: 5px;
+ text-align: right;
+
+}
 .login-card {
   margin: 0 0 20px 0px;
   flex: 0 0 49%;
   max-width: 49%;
   padding: 5px;
-  border: 3px solid var(--dark);
-  border-radius: var(--border-radius);
+  border: 1px solid var(--dark);
+  border-radius: 10px;
   border-style: double;
   border-width: thick;
   background-color: var(--tertiary);
@@ -137,25 +169,7 @@ main {
   background-color: var(--primary);
 }
 
-.comment-container{
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px #d3d3d3 solid;
-  border-radius: 10px;
-}
 
-.comment-button{
-  margin-top: 20px;
-}
-
-.comment-text{
-  padding: 10px;
-}
-
-.comment-author{
-  padding: 10px;
-  font-weight: bold;
-}
 
 footer {
   border-top: 1px solid #ccc;
