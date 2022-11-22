@@ -45,13 +45,12 @@ main {
 nav {
   display: flex;
   justify-content: flex-end;
-
 }
 
-h1{
-font-size: 300%;
- display: flex;
-justify-content: flex-start;
+h1 {
+  font-size: 300%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 nav a {
@@ -119,37 +118,36 @@ main {
   font-weight: bold;
 }
 
-.post-author{
-text-align: right;
+.post-author {
+  text-align: right;
 }
 
-.single-post-container{
+.single-post-container {
   margin-top: 20px;
 }
 
-.comment-form{
+.comment-form {
   margin-top: 10px;
   padding: 10px;
- 
 }
 
-.comment-button{
+.comment-button {
   margin-top: 20px;
+  background-color: var(--primary);
 }
-.comments{
-border-bottom: 0.5px solid var(--tertiary);
-margin-bottom: 5px;
+.comments {
+  border-bottom: 0.5px solid var(--tertiary);
+  margin-bottom: 5px;
 }
 
-.comment-text{
+.comment-text {
   padding: 10px;
   text-align: left;
 }
 
-.comment-author{
+.comment-author {
   padding: 5px;
- text-align: right;
-
+  text-align: right;
 }
 .login-card {
   margin: 0 0 20px 0px;
@@ -164,29 +162,22 @@ margin-bottom: 5px;
   color: var(--light);
 }
 
-.new-post-button{
+.new-post-button {
   margin: 20px 0;
   background-color: var(--primary);
 }
 
-
-
 footer {
   border-top: 1px solid #ccc;
   display: flex;
-margin-top: 70px;
+  margin-top: 70px;
   justify-content: center;
   padding: 1%;
   font-size: 60%;
 }
 
-
-   @media screen and (min-width: 768px) {
-
-nav a {
-
-  padding: 14px 5px;
-
-}
-
+@media screen and (min-width: 768px) {
+  nav a {
+    padding: 14px 5px;
+  }
 }
