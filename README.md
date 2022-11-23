@@ -28,7 +28,7 @@
 - [Questions](#questions)
 
 ## Application Deployment
-[Deployed Site: https://fathomless-wave-22092.herokuapp.com/](https://fathomless-wave-22092.herokuapp.com/)
+[https://fathomless-wave-22092.herokuapp.com/](https://fathomless-wave-22092.herokuapp.com/)
 
 ## Application Screenshot
 
