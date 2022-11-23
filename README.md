@@ -17,20 +17,22 @@
 ## Description
 🔍 A mysql database and CMS-style Blog built using Model View Controller (MVC) paradigm. Built using MySQL2, Express, Sequelize, Bulma, Handlebars and dotenv.
 
+## Table of Contents
+- [Description](#description)
+- [Deployment](#application-deployment)
+- [Screenshot](#application-screenshot)
+- [Installation](#installation)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+- [Questions](#questions)
+
 ## Application Deployment
 
 
 ## Application Screenshot
 
 ![screenshot](./utils/screenshot-1.jpg)
-
-## Table of Contents
-- [Description](#description)
-- [Installation](#installation)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-- [Questions](#questions)
 
 
 ## Installation
@@ -82,10 +84,6 @@ npm i sequelize
 <p>Permission to use this application is granted under the MIT license.</p>
  
 [MIT](https://choosealicense.com/licenses/mit)
-
-
-
-
 
 
 ## Questions
