@@ -28,7 +28,7 @@
 - [Questions](#questions)
 
 ## Application Deployment
-[https://fathomless-wave-22092.herokuapp.com/](https://fathomless-wave-22092.herokuapp.com/)
+[https://tech-blog-xiaojing.herokuapp.com/](https://tech-blog-xiaojing.herokuapp.com/)
 
 ## Application Screenshot
 
