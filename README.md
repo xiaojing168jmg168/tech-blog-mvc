@@ -33,6 +33,9 @@
 ## Application Screenshot
 
 ![screenshot](./utils/screenshot-1.jpg)
+![screenshot](./utils/dashboard.jpg)
+![screenshot](./utils/create-new-post.jpg)
+![screenshot](./utils/update-delete.jpg)
 
 
 ## Installation
