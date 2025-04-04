@@ -28,7 +28,7 @@
 - [Questions](#questions)
 
 ## Application Deployment
-[https://tech-blog-xiaojing.herokuapp.com/](https://tech-blog-xiaojing.herokuapp.com/)
+
 
 ## Application Screenshot
 
